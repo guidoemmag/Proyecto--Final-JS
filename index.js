@@ -78,3 +78,26 @@ const nombre = localStorage.getItem('name')
 const apellido = localStorage.getItem('apellido')
 
 
+// PROMESA // 
+const clickeame = document.getElementById('clickeame')
+const div8 = document.getElementById('div8')
+let agradecer = {agradecer: '¡Que tengas un lindo dia!'}
+
+function promesa(info){
+    return new Promise((resolve, reject) =>{
+        setTimeout(()=>{
+            resolve(agradecer)
+        }, 2000)
+    })
+}
+
+clickeame.onclick = (e) => {
+    e.preventDefault
+    promesa()
+    .then((respuesta)=> {
+        let lindoDia = document.createElement('lindoDia')
+        lindoDia.innerText=`${respuesta.agradecer}`
+        div8.appendChild(lindoDia)
+        
+    })
+}
