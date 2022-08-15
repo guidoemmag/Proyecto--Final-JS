@@ -3,16 +3,16 @@ let tituloPrincipal = document.getElementById('tituloPrincipal')
 tituloPrincipal.innerHTML = "<h2> ¡Bienvenidos! Ingrese sus datos por favor y producto que adquiere"
 console.log(tituloPrincipal)
 
-let buttonEnviar = document.getElementById('boton')
+let buttonEnviar = document.getElementById('clickeame')
 
-const swalBtn = document.getElementById('boton')
+const swalBtn = document.getElementById('clickeame')
 
 swalBtn.addEventListener('click', () => {
     Swal.fire({
         title: '¡Muchas gracias por ingresar los datos!',
-        icon:'Success',
+        icon: 'Success',
         confirmButtonText: "¡De nada!",
-        timer:2000
+        timer: 2000
     })
 })
 
@@ -81,11 +81,11 @@ const apellido = localStorage.getItem('apellido')
 // PROMESA // 
 const clickeame = document.getElementById('clickeame')
 const div8 = document.getElementById('div8')
-let agradecer = {agradecer: '¡Que tengas un lindo dia!'}
+let agradecer = { agradecer: '¡Que tengas un lindo dia!' }
 
-function promesa(info){
-    return new Promise((resolve, reject) =>{
-        setTimeout(()=>{
+function promesa(info) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
             resolve(agradecer)
         }, 2000)
     })
@@ -94,10 +94,10 @@ function promesa(info){
 clickeame.onclick = (e) => {
     e.preventDefault
     promesa()
-    .then((respuesta)=> {
-        let lindoDia = document.createElement('lindoDia')
-        lindoDia.innerText=`${respuesta.agradecer}`
-        div8.appendChild(lindoDia)
-        
-    })
+        .then((respuesta) => {
+            let lindoDia = document.createElement('lindoDia')
+            lindoDia.innerText = `${respuesta.agradecer}`
+            div8.appendChild(lindoDia)
+
+        })
 }
