@@ -3,18 +3,18 @@ let tituloPrincipal = document.getElementById('tituloPrincipal')
 tituloPrincipal.innerHTML = "<h2> ¡Bienvenidos! Ingrese sus datos por favor y producto que adquiere"
 console.log(tituloPrincipal)
 
-let buttonEnviar = document.getElementById('clickeame')
+let buttonEnviar = document.getElementById('boton')
 
-const swalBtn = document.getElementById('clickeame')
+const swalBtn = document.getElementById('boton')
 
-swalBtn.addEventListener('click', () => {
+ swalBtn.addEventListener('click', () => {
     Swal.fire({
         title: '¡Muchas gracias por ingresar los datos!',
         icon: 'Success',
         confirmButtonText: "¡De nada!",
         timer: 2000
     })
-})
+}) 
 
 buttonEnviar.onclick = () => {
 
@@ -54,9 +54,7 @@ div2.onmouseup = () => {
     console.log('Aca tambien...')
 }
 
-const formulario1 = document.getElementById('form1')
-
-formulario.onclick = (e) => {
+formulario.onsubmit = (e) => {
     e.preventDefault()
     if (e.target.children.length > 0) {
         for (const elemento of e.target.children) {
@@ -98,6 +96,7 @@ clickeame.onclick = (e) => {
             let lindoDia = document.createElement('lindoDia')
             lindoDia.innerText = `${respuesta.agradecer}`
             div8.appendChild(lindoDia)
-
         })
 }
+
+

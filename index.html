@@ -12,38 +12,47 @@
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
     <script defer src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <title>Bienvenidos</title>
 </head>
 
 <body>
-    <img id="imagen1"
-        src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e82c468-a0b9-4ead-8a24-228549c0a6bc/d661vor-50e058e6-87fa-4756-b13a-a32e74363457.png/v1/fill/w_654,h_237,strp/bienvenidos_by_chinitaedicions_d661vor-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjM3IiwicGF0aCI6IlwvZlwvMWU4MmM0NjgtYTBiOS00ZWFkLThhMjQtMjI4NTQ5YzBhNmJjXC9kNjYxdm9yLTUwZTA1OGU2LTg3ZmEtNDc1Ni1iMTNhLWEzMmU3NDM2MzQ1Ny5wbmciLCJ3aWR0aCI6Ijw9NjU0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.kC2NbZe97o28UADH3v-4wF3nXRhS5PXGsu5sjfY8ZKM"
-        alt="">
+    <header>
+        <img id="imagen1"
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1e82c468-a0b9-4ead-8a24-228549c0a6bc/d661vor-50e058e6-87fa-4756-b13a-a32e74363457.png/v1/fill/w_654,h_237,strp/bienvenidos_by_chinitaedicions_d661vor-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjM3IiwicGF0aCI6IlwvZlwvMWU4MmM0NjgtYTBiOS00ZWFkLThhMjQtMjI4NTQ5YzBhNmJjXC9kNjYxdm9yLTUwZTA1OGU2LTg3ZmEtNDc1Ni1iMTNhLWEzMmU3NDM2MzQ1Ny5wbmciLCJ3aWR0aCI6Ijw9NjU0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.kC2NbZe97o28UADH3v-4wF3nXRhS5PXGsu5sjfY8ZKM"
+            alt="">
+    </header>
 
 
-    <h1 id="tituloPrincipal">¡Bienvenidos!</h1>
-    <div id="div2">
-        <form id="form1">
-            <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre.." required>
-            <br />
-            <input type="text" name="last" id="apellido" placeholder="Ingrese su apellido.." required>
-            <br />
-            <input type="email" name="email" id="email" placeholder="Ingrese su email.." required>
-            <br />
-            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña.." required>
-            <br />
-            <input type="producto" name="product" id="producto" placeholder="Ingrese su producto.." required>
-            <br />
-             <!-- <button id="clickeame" type="submit" name="reset" value="Clickeame">Clickeame</button>  -->
-             <input type="submit" id="button" value="Enviar" >
-        </form>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-        <script type="text/javascript">
-            emailjs.init('jFP2d9rTO2CIW_qZQ')
-        </script>
-        <div id="div8"></div>
-    </div>
+    <main>
+        <h1 id="tituloPrincipal">¡Bienvenidos!</h1>
+         <div id="div2">
+             <form id="form1"> 
+                <input type="text" name="name" id="nombre" placeholder="Ingrese su nombre.." required>
+                <br />
+                <input type="text" name="last" id="apellido" placeholder="Ingrese su apellido.." required>
+                <br />
+                <input type="email" name="email" id="email" placeholder="Ingrese su email.." required>
+                <br />
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña.." required>
+                <br />
+                <input type="producto" name="product" id="producto" placeholder="Ingrese su producto.." required>
+                <br />
+                <button id="clickeame" type="submit" name="reset" value="Clickeame">Clickeame</button>
+                <button id="boton" type="submit">Enviar</button>
+            </form> 
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+            <script type="text/javascript">
+                emailjs.init('jFP2d9rTO2CIW_qZQ')
+            </script>
+            <div id="div8"></div>
+        </div>
+    </main>
 
     <script src="swal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -55,26 +64,25 @@
 </body>
 
 <script>
-    const btn = document.getElementById('button');
+    const btn = document.getElementById('boton');
+    document.getElementById('form1')
+        .addEventListener('click', function (event) {
+            event.preventDefault();
 
-document.getElementById('form1')
-    .addEventListener('submit', function (event) {
-        event.preventDefault();
+            btn.value = 'Enviando..';
 
-        btn.value = 'Enviando..';
+            const serviceID = 'default_service';
+            const templateID = 'template_isgo72i';
 
-        const serviceID = 'default_service';
-        const templateID = 'template_isgo72i';
-
-        emailjs.sendForm(serviceID, templateID, this)
-            .then(() => {
-                btn.value = 'Enviar';
-                alert('Formulario enviado correctamente!');
-            }, (err) => {
-                btn.value = 'Enviar';
-                alert(JSON.stringify(err));
-            });
-    });
+            emailjs.sendForm(serviceID, templateID, this)
+                .then(() => {
+                    btn.value = 'Enviar';
+                    alert('Formulario enviado correctamente!');
+                }, (err) => {
+                    btn.value = 'Enviar';
+                    alert(JSON.stringify(err));
+                });
+        });
 </script>
 
 </html>
